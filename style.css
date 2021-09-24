@@ -1,0 +1,649 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+/* ###################################### NAV BAR STYLING ######################################## */
+.container{
+    max-width: 1200px;
+    width: 90%;
+    margin: auto;
+}
+/* .navbar-container input[type = "checkbox"],
+.navbar .hamburger-lines{
+    display: none;
+} */
+.navbar{
+    box-shadow: 0px 5px 10px 0px lightgrey;
+    position: fixed;
+    width: 100%;
+    background-color: #fff;
+    opacity: 0.95;
+    z-index: 999;
+}
+.navbar-container{
+    display: flex;
+    justify-content: space-between;
+    height: 64px;
+    align-items: center;
+}
+.navbar-container h1 span{
+    color: orangered;
+}
+ul{
+    display: flex;
+}
+ul li{
+    font-size: 18px;
+    margin-left: 20px;
+}
+ul li a{
+    transition:  0.3s ease-in-out;
+    text-decoration: none;
+    color: black;
+}
+ul li a:hover{
+    /* text-decoration: underline black; */
+    color: orangered;
+}
+/* ################################# SECTION STYLING ######################### */
+.section-area{
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(img.jpg);
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+}
+.section-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    color: #fff;
+    text-transform: uppercase;
+}
+.pg{
+    transform: translateY(-1100%);
+    animation: mom 1s ease-in-out forwards;
+}
+@keyframes mom{
+    100%{
+        transform: translate(0);
+    }
+}
+.hd{
+    transform: translateX(-300%);
+    animation: dad 1s ease-in-out forwards;
+    animation-direction: normal;
+}
+@keyframes dad{
+    100%{
+        transform: translate(0);
+    }
+}
+.primary-btn{
+    transform: translateY(435%);
+    animation: child 1s ease-in-out forwards;
+}
+@keyframes child{
+    100%{
+        transform: translate(0);
+    }
+}
+.section-container p span{
+    color: white;
+    animation-name: color;
+    animation-duration: 5s;
+    /* animation-fill-mode: backwards; */
+    animation-delay: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+}
+@keyframes color{
+    from{
+      color: white;
+    }
+    to{
+      color: orangered;
+    }
+}
+.section-area p{
+    /* border: 2px solid springgreen; */
+    font-size: 20px;
+    margin-bottom: 96px;
+    margin-top: -99px;
+}
+.section-area h1{
+    /* border: 2px solid red; */
+    margin: 47px 38px;
+    margin-top: -53px;
+    font-size: 100px;
+}
+.section-area button{
+    background-color: orangered;
+    padding: 15px 17px;
+    margin: 0px 10px;
+    border: none;
+    margin-bottom: -157px;
+}
+.section-area button a{
+    text-decoration: none;
+    color: white;
+}
+/* ################################### ABOUT US STYLING ################################ */
+.main-content{
+    margin-top: 55px;
+}
+.content{
+    /* border: 4px solid black; */
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.content h2{
+    text-transform: uppercase;
+    color: black;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 40px;
+}
+.content h2 span{
+    color: orangered;
+}
+.content p{
+    /* border: 2px solid greenyellow; */
+    width: 50%;
+    text-align: center;
+    padding: 31px;
+    color: grey;
+}
+/* .box1,.box3,.box5{
+    transform: translate(-150%);
+    animation: mom 1s ease-in-out forwards;
+}
+@keyframes mom{
+    100%{
+        transform: translate(0);
+    }
+}
+.box2,.box4,.box6{
+    transform: translateX(150%);
+    animation: mom 1s ease-in-out forwards;
+}
+@keyframes mom{
+    100%{
+        transform: translate(0);
+    }
+} */
+.menu-items{
+    /* border: 4px solid black; */
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: top;
+    margin-top: 50px;
+    margin-right: 13px;
+}
+.box{
+    /* border: 2px solid red; */
+    width: 50%;
+    display: inline-block;
+    margin: 14px 0px;
+}
+.item{
+    margin: -94px 108px;
+    display: inline-block;
+    padding: 18px 22px;
+}
+.item h3{
+    /* border: 2px solid blue; */
+    margin: 10px 0px;
+    font-size: 25px;
+}
+.item p{
+    color: grey;
+}
+.box button{
+    margin: 12px 128px;
+    background-color: #FEA47F;
+    border-radius: 10px;
+    font-size: 15px;
+    padding: 10px 5px;
+    border: none;
+    /* color: white; */
+}
+.box a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}
+.box a:hover{
+    color: orangered;
+}
+.sec{
+    /* border: 4px solid pink; */
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(img1.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+    margin: 53px 0px;
+}
+.sec h2{
+    /* border: 2px solid black; */
+    margin-bottom: 40px;
+}
+.sec h2 span.a{
+    color: #fff;
+}
+.sec h2 span.b{
+    color: orangered;
+}
+.sec p{
+    margin-top: -49px;
+    /* border: 2px solid black; */
+    color: #fff;
+}
+.sec button{
+    padding: 15px 17px;
+    margin-top: 4px;
+    border: none;
+    background-color: orangered;
+}
+.sec button a{
+    text-decoration: none;
+    color: white;
+}
+/* #################################### CLASSES STYLING ################################ */
+.class-item{
+    /* border: 4px solid black; */
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.class-item h2{
+    /* border: 2px solid springgreen; */
+    margin-bottom: 20px;
+    font-size: 40px;
+}
+.class-item h2 span{
+    color: orangered;
+}
+.class-item p{
+    /* border: 2px solid coral; */
+    width: 50%;
+    text-align: center;
+    margin-top: 20px;
+    color: grey;
+}
+.training{
+    /* border: 4px solid yellow; */
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.count{
+    /* border: 4px solid red; */
+    display: block;
+    width: 25%;
+    text-align: center;
+    padding: 30px 0px;
+    margin-bottom: 20px;
+    box-shadow: 0px 5px 10px 0px lightgrey;
+    margin-left: 15px;
+    cursor: pointer;
+}
+.count p{
+    /* border: 2px solid black; */
+    margin-top: 12px;
+}
+.training button{
+    background-color: orangered;
+    border: none;
+    padding: 20px 10px;
+    margin: 10px 14px;
+    width: 25%;
+    border-radius: 5px;
+}
+.training button a{
+    text-decoration: none;
+    color: white;
+}
+.frst{
+    /* border: 4px solid red; */
+    width: 70%;
+    margin-top: -601px;
+    margin-left: 320px;
+    margin-bottom: 88px;
+    /* display: none; */
+}
+                                            /* FRST STYLING */
+.frst h2{
+    /* border: 2px solid lime; */
+    margin-top: 15px;
+    margin-left: 10px;
+}
+.frst p{
+    /* border: 2px solid lime; */
+    margin-top: 15px;
+    margin-left: 10px;
+}
+.frst button{
+    /* border: 2px solid lime; */
+    margin-left: 10px;
+    margin-top: 18px;
+}
+                                            /* SCND STYLING */
+.scnd{
+    width: 70%;
+    margin-top: -601px;
+    margin-left: 320px;
+    margin-bottom: 88px;
+    display: none;
+}
+.scnd h2{
+    /* border: 2px solid lime; */
+    margin-top: 15px;
+    margin-left: 10px;
+}
+.scnd p{
+     /* border: 2px solid lime; */
+     margin-top: 15px;
+     margin-left: 10px;
+}
+.scnd button{
+    /* border: 2px solid lime; */
+    margin-left: 10px;
+    margin-top: 18px;
+}
+                                            /* THIRD STYLING */
+.third{
+    width: 70%;
+    margin-top: -601px;
+    margin-left: 320px;
+    margin-bottom: 88px;
+    display: none;
+}
+.third h2{
+    /* border: 2px solid lime; */
+    margin-top: 15px;
+    margin-left: 10px;
+}
+.third p{
+     /* border: 2px solid lime; */
+     margin-top: 15px;
+     margin-left: 10px;
+}
+.third button{
+    /* border: 2px solid lime; */
+    margin-left: 10px;
+    margin-top: 18px;
+}
+                                            /* FOURTH STYLING */
+.fourth{
+    width: 70%;
+    margin-top: -601px;
+    margin-left: 320px;
+    margin-bottom: 88px;
+    display: none;
+}
+.fourth h2{
+    /* border: 2px solid lime; */
+    margin-top: 15px;
+    margin-left: 10px;
+}
+.fourth p{
+     /* border: 2px solid lime; */
+     margin-top: 15px;
+     margin-left: 10px;
+}
+.fourth button{
+    /* border: 2px solid lime; */
+    margin-left: 10px;
+    margin-top: 18px;
+}
+/* ################################## OUR SCHEDULES ################################## */
+.schedules{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(img2.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 136vh;
+    margin-top: 70px;
+}
+.schedule-content h2{
+  color: #fff;
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+.schedule-content h2 span{
+    color:orangered;
+}
+.schedule-content p{
+    color: #fff;
+    width: 35%;
+    text-align: center;
+    margin-top: 32px;
+}
+.schedule-content{
+    /* border: 4px solid black; */
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.days{
+    margin-top: 70px;
+    color: #ffff;
+    font-size: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.s:hover{
+    color: orangered;
+    transition: color 500ms ease-in-out;
+}
+.table{
+    margin-top: 30px;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.table-sec{
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.table-sec thead tr td{
+    padding: 25px 20px;
+    text-align: center;
+}
+.trainer{
+    /* border: 3px solid red; */
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 52px;
+}
+.trainer-content h2{
+    color: black;
+    margin-bottom: 20px;
+    font-size: 40px;
+}
+.trainer-content h2 span{
+    color: orangered;
+}
+.trainer-content p{
+    /* border: 2px solid green; */
+    margin-top: 20px;
+    width: 37%;
+    margin: 20px 362px;
+}
+.wrapper{
+    margin-top: 50px;
+    /* border: 3px solid blue; */
+    display: flex;
+    flex-wrap: wrap;
+}
+/* ############################ PERSON 1 ################################## */
+.prs1{
+    width: 32%;
+    box-shadow: 0px 5px 10px 0px #aaa;
+}
+.prs1 img{
+    margin: 15px 30px;
+}
+.prs1 p.p{
+    margin: 1px 28px;
+    color: orangered;
+    margin-top: -10px;
+}
+.prs1 h2{
+    margin: 6px 27px;
+    margin-top: 12px;
+}
+.prs1 p.para{
+    margin-top: 29px;
+    margin: 16px 26px;
+    color: grey;
+}
+/* ################################## PERSON 2 #################################### */
+.prs2{
+    width: 32%;
+    margin-left: 15px;
+    box-shadow: 0px 5px 10px 0px #aaa;
+}
+.prs2 img{
+    margin: 15px 30px;
+}
+.prs2 p.m{
+    margin: 1px 28px;
+    color: orangered;
+    margin-top: -10px;
+}
+.prs2 h2{
+    margin: 6px 27px;
+    margin-top: 12px;
+}
+.prs2 p.mc{
+    margin-top: 29px;
+    margin: 16px 26px;
+    color: grey;
+}
+/* #################################### PERSON 3 ########################################### */
+.prs3{
+    width: 32%;
+    margin-left: 16px;
+    box-shadow: 0px 5px 10px 0px #aaa;
+}
+.prs3 img{
+    margin: 15px 30px;
+}
+.prs3 p.q{
+    margin: 1px 28px;
+    color: orangered;
+    margin-top: -10px;
+}
+.prs3 h2{
+    margin: 6px 27px;
+    margin-top: 12px;
+}
+.prs3 p.peak{
+    margin-top: 29px;
+    margin: 16px 26px;
+    color: grey;
+}
+.prs1 span.icon{
+    display: inline-block;
+    /* border: 2px solid red; */
+    margin: 10px 24px;
+    margin-bottom: 42px;
+}
+.prs2 span.icon{
+    display: inline-block;
+    /* border: 2px solid red; */
+    margin: 10px 24px;
+    margin-bottom: 42px;
+}
+.prs3 span.icon{
+    display: inline-block;
+    /* border: 2px solid red; */
+    margin: 10px 24px;
+    margin-bottom: 42px;
+}
+/* ################################### FOOTER STYLING ############################# */
+.div{
+    /* border: 4px solid red; */
+    margin-top: 80px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.ct1 img{
+    width: 100%;
+    height: 100%;
+}
+.ct2{
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(img4.jpg);
+    height: 86vh;
+    background-size: cover;
+    background-position: center;
+    /* border: 2px solid pink; */
+    position: relative;
+}
+.ct2 .form{
+    padding: 18px 12px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: aliceblue;
+    border-radius: 15px;
+}
+.form input[type="text"]{
+    margin: 9px 9px;
+    padding: 5px 10px;
+}
+.form input[type="email"]{
+    margin: 9px 9px;
+    padding: 6px 10px;
+}
+textarea{
+    margin: 10px 10px;
+    padding: 10px 10px;
+}
+.btn{
+    background-color: orangered;
+    display: inline-block;
+    padding: 10px 10px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.btn a:hover{
+    color: white;
+}
+.copy{
+    /* border: 2px solid black;  */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+    margin-bottom: 25px;
+    /* margin: 18px 20px; */
+    /* background-color: lightgrey; */
+}
+.form label::after{
+    content: '* ';
+    color: red;
+}
+
